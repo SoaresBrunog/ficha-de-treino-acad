@@ -5,7 +5,11 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #F1D8C9, #F2C3A7);
+    background-color: #B9BF0B;
+}
+
+h1 {
+    text-align: center;
 }
 
 main {
@@ -17,23 +21,17 @@ main {
     margin: auto;
 }
 
-h1 {
-    color: black;
-    text-align: center;
-    text-shadow: 1px 1px 0px rgb(129, 77, 5, 0.726);
+img {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    display: block;
+    margin: auto;
 }
-
-h2{
-    color: #125189;
+ul {
+    text-align: center;
 }
 p {
-    text-align: justify;
-    color: rgba(0, 0, 0, 0.726);
-    text-shadow: 1px 1px 0px #2c0596;
-    text-align: justify;
-}
-
-ol {
-    color: rgba(0, 0, 0, 0.726);
-    text-shadow: 1px 1px 0px #2c0596;
+    text-align: center;
+    padding: 20px;
 }

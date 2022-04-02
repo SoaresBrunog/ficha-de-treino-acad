@@ -1,21 +1,130 @@
 @charset "UTF-8";
-*{
-    font-family: Arial, Helvetica, sans-serif; 
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor2: #2D470E;
+    --cor3: #675E6B;
+    --cor4: #B9BF0B;
 }
 
 body {
-    background-image: linear-gradient(to right, #bfbcc5, #add8bae7);
+    background-color:  #c5ebd6;
+    font-family: 'Bebas Neus', curdive;
+ }
+
+ header {
+     background-color: var(--cor3);
+     text-align: center;
+     color: #B9BF0B;
+     min-height: 150px;
+     padding: 40px;
+ }3
+
+ nav {
+    background-color: #2D470E;
+    color: #2D470E;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(, 0, 0,0.192);
 }
 
-h1 {
-    color: rgba(0, 0, 0, 0.726);
-    text-align: center;
+nav > a {
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
 }
 
-h2{
-    color: rgba(0, 0, 0, 0.726);
+nav > a:hover {
+    background-color:#063d1e;
+    color: #B9BF0B;
 }
-p {
-    color: rgba(0, 0, 0, 0.726);
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #2D470E;
+    box-shadow: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+}
+
+main h1 {
+    color: #B9BF0B;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    color: #063d1e;
+    font-size: 1.3em;
+    text-indent: 8px;
+}
+
+main p {
+    margin: 15px 0px;
     text-align: justify;
+    text-indent:  30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color:  #26bd67;
+    background-color: white;
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: gold;
+}
+
+main img {
+    max-width: 200px;
+    margin: auto;
+    display: block;
+    padding: 10px;
+}
+
+aside {
+    background-color:  #c5ebd6;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px #2D470E;
+}
+
+aside > h3 {
+    background-color: #063d1e;
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 10px;
+}
+
+aside > ul {
+    list-style-position: inside;
+}
+
+footer {
+    background-color: #063d1e;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
 }
